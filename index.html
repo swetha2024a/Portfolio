@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swetha A | Data Analyst Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url("protfolio1.jpeg") no-repeat center center/cover;
+            padding: 100px 10%;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            top: 0;
+            left: 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-text h1 {
+            font-size: 40px;
+        }
+
+        .header-text p {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        nav {
+            background: #1e293b;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #1e293b;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #7c3aed;
+        }
+
+        footer {
+            background: #1e293b;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="header-text">
+            <h1>Swetha A</h1>
+            <p>Aspiring Data Analyst | Python | SQL | Power BI | Machine Learning</p>
+            <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+                View My Work
+            </button>
+        </div>
+        <img src="sweavatar.png" alt="Swetha A" class="profile-img">
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certification</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Passionate Data Analyst with BSc in Computer Science.
+        Skilled in Python, SQL, Power BI, and Machine Learning.
+        Seeking entry-level opportunities to apply analytical skills.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="card">
+        <h3>Programming & Query Languages</h3>
+        <div class="skills">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Advanced Excel</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Data Analysis & Visualization</h3>
+        <div class="skills">
+            <span>Power BI</span>
+            <span>Data Cleaning</span>
+            <span>Data Transformation</span>
+            <span>Data Modeling</span>
+            <span>DAX</span>
+            <span>Dashboard Development</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Python Libraries</h3>
+        <div class="skills">
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Matplotlib</span>
+            <span>Seaborn</span>
+            <span>Scikit-learn</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Database & Tools</h3>
+        <div class="skills">
+            <span>MySQL</span>
+            <span>PostgreSQL</span>
+            <span>pgAdmin</span>
+            <span>Git & GitHub</span>
+            <span>VS Code</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Machine Learning</h3>
+        <div class="skills">
+            <span>Supervised Learning</span>
+            <span>Regression</span>
+            <span>Classification</span>
+            <span>Model Evaluation</span>
+            <span>Feature Engineering</span>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Sales Dashboard - Power BI</h3>
+        <p>Interactive dashboard analyzing revenue and profit trends.</p>
+    </div>
+
+    <div class="card">
+        <h3>AI-Powered Legal Document Analyzer</h3>
+        <p>NLP system detecting risk clauses using Transformers.</p>
+    </div>
+
+    <div class="card">
+        <h3>Web Design Project</h3>
+        <p>Responsive website built using HTML and CSS.</p>
+        <a href="file:///C:/Users/acer/OneDrive/Desktop/swetha%20project/webdesign001-main/pages.html" target="_blank">
+            <button>View Project</button>
+        </a>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="card">
+        <h3>Data Science Intern – SYSTECH</h3>
+        <p><strong>Duration:</strong> March 2025 – April 2025</p>
+        <a href="Internship Certificate.jpg" target="_blank">
+            <button>View Certificate</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Quality Control Training – TNQTECH</h3>
+        <a href="TNQ.jpeg" target="_blank">
+            <button>View Certificate</button>
+        </a>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certification</h2>
+
+    <div class="card">
+        <h3>Data Science with Python Programming</h3>
+        <p><strong>Institution:</strong> SYSTECH</p>
+        <p><strong>Duration:</strong> Aug – Feb 2025</p>
+        <a href="Course Certificate.jpg" target="_blank">
+            <button>View Certificate</button>
+        </a>
+    </div>
+</section>
+
+<section id="resume">
+    <h2>My Resume</h2>
+    <div class="card" style="text-align:center;">
+        <a href="Swetha_A_Resume.pdf" target="_blank">
+            <button>View Resume</button>
+        </a>
+        <br>
+        <a href="Swetha_A_Resume.pdf" download>
+            <button>Download Resume</button>
+        </a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: swetha9344712@gmail.com</p>
+    <p>LinkedIn: https://linkedin.com/in/swetha-a-4b69222b8</p>
+    <p>GitHub: https://github.com/swetha2024a</p>
+</section>
+
+<footer>
+    <p>© 2026 Swetha A | Data Analyst Portfolio</p>
+</footer>
+
+</body>
+</html>
